@@ -1,0 +1,96 @@
+header {
+  width: 100%;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 9999;
+
+  @include xs {
+    position: relative;
+  }
+  @include ms {
+    position: relative;
+  }
+  @include md {
+    position: relative;
+  }
+
+  a {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    font-weight: bold;
+    @include ms {
+      font-size: 1.8rem;
+    }
+    @include md {
+      font-size: 1rem;
+    }
+  }
+  a:hover {
+    color: var(--bg-primary);
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  padding: 2rem;
+  @include xs {
+    flex-direction: column;
+  }
+  @include ms {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  @include xs {
+    margin-bottom: 2.5rem;
+  }
+  @include ms {
+    margin-bottom: 1.5rem;
+  }
+  &_box {
+    width: 30px;
+    height: auto;
+  }
+  &_img {
+    width: 100%;
+  }
+  &_text {
+    margin-left: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--secondary);
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  @include xs {
+    flex-direction: column;
+    text-align: center;
+  }
+  @include ms {
+    flex-direction: column;
+    text-align: center;
+  }
+  &_list {
+    padding-right: 1rem;
+    @include xs {
+      padding: 0rem 1rem;
+      margin-bottom: 2.5rem;
+    }
+    @include ms {
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

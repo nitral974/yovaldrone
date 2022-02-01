@@ -1,0 +1,22 @@
+{
+  "name": "yovaldrone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss:css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./style.min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "sass": "^1.49.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11"
+  }
+}

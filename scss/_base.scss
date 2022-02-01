@@ -1,0 +1,23 @@
+body {
+  font-family: var(--font-family);
+  color: var(--secondary);
+}
+h2 {
+  font-size: 2rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+
+%btn {
+  padding: 1.5rem;
+  color: var(--secondary);
+  border: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    background: var(--secondary);
+    color: white;
+  }
+}
